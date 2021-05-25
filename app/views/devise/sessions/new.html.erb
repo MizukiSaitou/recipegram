@@ -13,7 +13,7 @@
     <div class="columns is-centered">
       <div class="column is-5">
 
-        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <%= form_with model: @user, url: session_path, local: true do |f| %>
           <div class="field">
             <%= f.label :email, class: "label" %>
             <p class="control has-icons-left">
