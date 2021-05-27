@@ -7,4 +7,6 @@ class User < ApplicationRecord
 
   has_many :resipes, dependent: :destroy
 
+  validates :username, presence: true
+
 end
